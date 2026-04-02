@@ -1,0 +1,91 @@
+body {
+  font-family: "Indie Flower", cursive;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(119, 136, 153, 0.486);
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.lavagna {
+  background-color: rgba(0, 0, 0, 0.596);
+  border: solid 10px rgb(104, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 1em;
+  padding: 0.5em;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.postit {
+  width: 150px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.green {
+  background: #cafccb;
+  background: linear-gradient(
+    179deg,
+    rgba(202, 252, 203, 1) 0%,
+    rgba(172, 200, 174, 1) 100%
+  );
+}
+
+.purple {
+  background: #c1c2eb;
+  background: linear-gradient(
+    179deg,
+    rgba(193, 194, 235, 1) 0%,
+    rgba(160, 160, 182, 1) 100%
+  );
+}
+
+.yellow {
+  background: #fcfcca;
+  background: linear-gradient(
+    179deg,
+    rgba(252, 252, 202, 1) 0%,
+    rgba(201, 202, 167, 1) 100%
+  );
+}
+
+.ruota-sinistra {
+  transform: rotate(-5deg);
+}
+
+.ruota-destra {
+  transform: rotate(5deg);
+}
+
+.postit:hover {
+  box-shadow: 0px 0px 30px rgba(206, 0, 0, 0.9);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  font-weight: bolder;
+  font-size: 1.3em;
+  color: red;
+}
